@@ -9,7 +9,7 @@ function calcularIMC() {
         return;
     }
 
-    var imc = peso / (altura * altura);
+    var imc = peso / (altura * altura)
     var resultado = "Seu IMC é " + imc.toFixed(2) + " - ";
 
     if (imc < 18.5) {

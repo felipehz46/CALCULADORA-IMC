@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC Calculator</title>
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,10 +18,12 @@
   
     <main>
         <img id="imgGenero" src="img/homen.png" alt="Imagem do IMC" width="10%"><br><br>
-        <button id="btnMulher" type="button" style="background-color: rgb(195, 0, 255);"> Mulher</button>
-        <button id="btnHomem" type="button" style="background-color: rgb(0, 119, 255);"> Homem</button>
-        <p>Peso (kg): <input type="number" id="peso" step="0.01"></p>
-        <p>Altura (m): <input type="number" id="altura" step="0.01"></p>
+        <button class="botao" id="btnMulher" type="button" style="background-color: rgb(195, 0, 255);"> Mulher</button>
+        <button class="botao" id="btnHomem" type="button" style="background-color: rgb(0, 119, 255);"> Homem</button>
+        <form action="">
+            <p>Peso (kg): <input type="number" id="peso" step="0.01"></p>
+            <p>Altura (m): <input type="number" id="altura" step="0.01"></p>
+        </form>
         <button onclick="calcularIMC()">Calcular</button>
         <p>Resultado: <span id="resultado"></span></p>
     </main>
